@@ -34,11 +34,11 @@ p {
     flex-direction: column;
     gap: 15px;
 }
-#textoEncriptar{
-    width: 300px; 
-    height: 40px;
-}
 
+#textoEncriptar,#textoDesencriptar{
+    width: 25rem; 
+    height: 25rem;
+}
 
 .encriptacion_texto {
     display: flex;
@@ -65,6 +65,13 @@ p {
     flex-direction: column;
     gap: 15px;
 }
+
+#textoEncriptado , #textoDesencriptado{
+    width: 25rem; 
+    height: 25rem;
+}
+
+
 
 .desencriptacion_texto {
     display: flex;
