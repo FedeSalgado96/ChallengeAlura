@@ -15,29 +15,31 @@
     <section class="seccionDeEncriptado">
         <section class="encriptacion">
             <div class="encriptacion_input_y_boton">
-                <input type="text" placeholder="Ingrese un texto para encriptar" id="textoEncriptar">
-                <button onclick="textoEncriptado()">Encriptar</button>
+                <textarea cols="30" rows="10" placeholder="Ingrese un texto para encriptar"
+                    id="textoEncriptar" ></textarea>
+                <button class="botones" onclick="textoEncriptado()">Encriptar</button>
             </div>
             <div class="encriptacion_texto">
                 <div class="encriptacion_textoEncriptado">
-                    <p id="textoEncriptado"> texto encriptado</p>
+                    <textarea cols="30" rows="10" id="textoEncriptado" readonly></textarea>
                 </div>
-                <button onclick="copiar('textoEncriptado')">Copiar texto encriptado</button>
+                <button class="botones" onclick="copiar('textoEncriptado')">Copiar texto encriptado</button>
             </div>
         </section>
 
         <section class="desencriptacion">
             <div class="desencriptacion_input_y_boton">
-                <input type="text" placeholder="Ingrese un texto para desencriptar" id="textoDesencriptar">
-                <button onclick="textoDesencriptado()">Desencriptar</button>
+                <textarea cols="30" rows="10" placeholder="Ingrese un texto para desencriptar"
+                    id="textoDesencriptar" ></textarea>
+                <button class="botones" onclick="textoDesencriptado()">Desencriptar</button>
             </div>
 
-<div class="desencriptacion_texto">
-            <div class="desencriptacion_textoDesencriptado">
-                <p id="textoDesencriptado"> texto desencriptado</p>
+            <div class="desencriptacion_texto">
+                <div class="desencriptacion_textoDesencriptado">
+                    <textarea cols="30" rows="10" id="textoDesencriptado" readonly></textarea>
+                </div>
+                <button class="botones" onclick="copiar('textoDesencriptado')">Copiar texto desencriptado</button>
             </div>
-            <button onclick="copiar('textoDesencriptado')">Copiar texto desencriptado</button>
-        </div>
         </section>
 
     </section>

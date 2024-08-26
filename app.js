@@ -47,7 +47,7 @@ function textoEncriptado() {
     }
 
 
-    document.getElementById('textoEncriptado').innerHTML = rearmarArray(textoDesarmado);;
+    document.getElementById('textoEncriptado').innerText = rearmarArray(textoDesarmado);;
 
 
 
@@ -79,7 +79,7 @@ function textoDesencriptado() {
         texto = texto.split('ufat').join('u');
     }
     
-    document.getElementById('textoDesencriptado').innerHTML = texto;
+    document.getElementById('textoDesencriptado').innerText = texto;
 
 }
 

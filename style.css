@@ -1,54 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
-    background-color: #D8DFE8;
+    background-color: #F3F5FC;
     box-sizing: border-box;
     height: 100vh;
+ 
 }
-
 
 .seccionDeEncriptado {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px;
-    padding: 20px;
-    gap: 30px;
+    padding: 15px;
+    gap: 2rem;
 }
 
-p {
-    font-family: "Inter", sans-serif;
+textarea {
+    margin: 0;
+    padding: 0;
 }
 
 .encriptacion {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 15px;
+    gap: 1rem;
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
 .encriptacion_input_y_boton {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 15px;
 }
 
-#textoEncriptar,#textoDesencriptar{
-    width: 25rem; 
+#textoEncriptar,
+#textoDesencriptar {
+    width: 25rem;
     height: 25rem;
+    border-color: #0A3871;
+    border-width: 2.5px;
+    border-radius: 6px;
+    font-family: "Inter", sans-serif;
+    resize: none;
+
 }
 
 .encriptacion_texto {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 15px;
 }
 
-.encriptacion_textoEncriptado {
-    border: 2px solid black;
-}
 
 .desencriptacion {
     display: flex;
@@ -56,8 +63,8 @@ p {
     justify-content: space-around;
     gap: 15px;
     width: 100%;
-    height:100%;
-    
+    height: 100%;
+
 }
 
 .desencriptacion_input_y_boton {
@@ -66,12 +73,16 @@ p {
     gap: 15px;
 }
 
-#textoEncriptado , #textoDesencriptado{
-    width: 25rem; 
+#textoEncriptado,
+#textoDesencriptado {
+    background-color: white;
+    border: 2.5px solid #0A3871;
+    border-radius: 6px;
+    width: 25rem;
     height: 25rem;
+    font-family: "Inter", sans-serif;
+    resize: none;
 }
-
-
 
 .desencriptacion_texto {
     display: flex;
@@ -79,6 +90,31 @@ p {
     gap: 15px;
 }
 
-.desencriptacion_textoDesencriptado {
-    border: 2px solid black;
+
+.botones {
+    width: 25.5rem;
+    height: 2rem;
+    font-family: "Inter", sans-serif;
+    border-radius: 8px;
+    border-color: #0A3871;
+    background-color: #D8DFE8;
+}
+
+.botones:hover {
+    color: #D8DFE8;
+    background-color: #0A3871;
+}
+
+
+@media(max-width: 950px) {
+    .encriptacion {
+       
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .desencriptacion {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
