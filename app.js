@@ -8,7 +8,6 @@ La letra "u" es convertida para "ufat"
 */
 
 
-
 function desarmarArray(texto) {
     let textoDesarmado = texto.split('');
     return textoDesarmado
@@ -18,7 +17,6 @@ function rearmarArray(texto) {
     let textoRearmado = texto.join('');
     return textoRearmado;
 }
-
 
 function textoEncriptado() {
     let texto = document.getElementById('textoEncriptar').value;
