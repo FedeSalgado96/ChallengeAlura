@@ -17,6 +17,8 @@
             <div class="encriptacion_input_y_boton">
                 <textarea cols="30" rows="10" placeholder="Ingrese un texto para encriptar"
                     id="textoEncriptar"></textarea>
+                    
+                    <p id="reglas">Solo letras minúsculas y sin acentos</p>
                 <button class="botones" onclick="textoEncriptado()">Encriptar</button>
             </div>
             <div class="encriptacion_texto">
@@ -33,6 +35,7 @@
             <div class="desencriptacion_input_y_boton">
                 <textarea cols="30" rows="10" placeholder="Ingrese un texto para desencriptar"
                     id="textoDesencriptar"></textarea>
+                    <p id="reglas">Solo letras minúsculas y sin acentos</p>
                 <button class="botones" onclick="textoDesencriptado()">Desencriptar</button>
             </div>
 
@@ -45,7 +48,15 @@
         </section>
 
     </section>
-    <footer></footer>
+    <footer>
+        <div class="pie">
+
+            <p>Challenge para el curso de Alura creado por Federico Salgado</p>
+            <p>Junto con el creador luchan por ver quien recibio menos amor en su creacion</p>
+
+        </div>
+
+    </footer>
     <script src="app.js"></script>
 </body>
 
